@@ -1,4 +1,5 @@
 # US-Adult-Salary-Prediction-ML-App
+### LINK TO THE WEBAPP: https://share.streamlit.io/xtric6/us-adult-salary-prediction-ml-app/main/app.py
 This repository contains supervised classification models built with python. This models were deployed to a WEB APP using SREAMLIT that can be used to perform EDA on the data and also predict if an adult in the US in the US earns less than or more than $50,000.
 
 ## USE CASE
@@ -96,8 +97,8 @@ This shows the heatmap/correlation plot of the features of the dataset
    
 ## CONCLUSION
 - RandomForest had the best accuracy and roc-score but in terms of correctly predicting our minority label (>50$ ) or 1 as its represented after encoding it performed poorly.
-- Bagging classifier was the best model among all models trained. it was able to predict our minority label better than other classifiers. This was evalauted using the confusion matrix. Bagging classifier(Bc) had the least False negative(FN)  value which made it better than other classifier in predicting the minority class.
-- Although the bagging calssofier predicts quite precisely. Its more slower than other classifiers in making predictions.
+- Decisiontree classifier was the best model among all models trained. it was able to predict our minority label better than other classifiers. This was evalauted using the confusion matrix. Bagging classifier(Bc) had the least False negative(FN)  value which made it better than other classifier in predicting the minority class.
+- Although the bagging calssifier predicts quite precisely. Its more slower than other classifiers in making predictions.
 
 ## WAYS PROJECT COULD BE IMPROVED
 - Adding a time column to the predictiontable that shows when each user makes a prediction
