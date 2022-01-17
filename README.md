@@ -7,12 +7,14 @@ This repository contains supervised classification models built with python. Thi
 - Can be applied to other sectors based on the business need.
 
 ## Data Understanding
-- **** The data was gotten from UCI repository and can be accessed with this link: https://archive.ics.uci.edu/ml/machine-learning-databases/adult/
-and contains ****15 columns**** and ****32561 rows****
- ***It contains the following attributes*** 
-- **** age*** : continuous.
-- **** Workclass**** : Private, Self-emp-not-inc, Self-emp-inc, Federal-gov, Local-gov, State-gov, Without-pay, Never-worked.
-- **** fnlwgt**** : continuous.
+#### The data was gotten from UCI repository and can be accessed with this link: https://archive.ics.uci.edu/ml/machine-learning-databases/adult/
+
+#### The data contains 15 columns and 32561 rows
+
+###### It contains the following attributes:
+- ****age**** : continuous.
+- ****Workclass**** : Private, Self-emp-not-inc, Self-emp-inc, Federal-gov, Local-gov, State-gov, Without-pay, Never-worked.
+- ****fnlwgt**** : continuous.
 - ****education**** : Bachelors, Some-college, 11th, HS-grad, Prof-school, Assoc-acdm, Assoc-voc, 9th, 7th-8th, 12th, Masters, 1st-4th, 10th, Doctorate, 5th-6th, Preschool.
 - ****education-num**** : continuous.
 - ****marital-status****: Married-civ-spouse, Divorced, Never-married, Separated, Widowed, Married-spouse-absent, Married-AF-spouse.
@@ -63,12 +65,39 @@ We have more data on adults that work in the private sectore in our dataset.
 
 # WEB APP Description/components
 - The web app performs the following functions
-- *** Exploratory data analysis that can be performed on the dataset on the webapp ***
----- On the web app the dataset can be previewed
----- The number of rows and columns can be gotten
----- its correlation plot can be viewd
----- And its summary statistics(description of data) can be viewed on the web app
+- **EDA (Exploratory data analysis that can be performed on the dataset on the webapp)**
+- On the web app the dataset can be previewed
+- The number of rows and columns can be gotten
+- its correlation plot can be viewd
+- And its summary statistics(description of data) can be viewed on the web app
+![streamliteda](https://user-images.githubusercontent.com/40510766/149770465-e99dd905-ffc5-4bb2-b814-86d59171ad53.JPG)
+This shows the heatmap/correlation plot of the features of the dataset
+![streamliteda2](https://user-images.githubusercontent.com/40510766/149771108-9e01ded6-5e2b-46e0-a2de-890b88516e26.JPG)
 
+- **PREDICTIONS**
+- Any of three models can be used to predict an outcome:
+ - Linear Regression
+ - Decison tree calssifie and 
+ - Bagging Classifier
+![salaryprediction1](https://user-images.githubusercontent.com/40510766/149773271-95f563ad-dfce-4337-882d-d09fb0c4fbc7.JPG)
+    - Prediction made with Logistic Regression Classifier
+![salary prediction2](https://user-images.githubusercontent.com/40510766/149773362-75e39a69-b720-463b-8e65-158614943f36.JPG)
+    - Prediction made with Decision Tree
+![salary prediction3](https://user-images.githubusercontent.com/40510766/149773374-00532410-44bd-472b-a21b-6f106358e4f7.JPG)
+    - Prediction made with Bagging Classifier
+![salary prediction4](https://user-images.githubusercontent.com/40510766/149773385-64622697-5af3-4845-a1ed-4b423585e00c.JPG)
+ 
+- **METRICS**
+ - This part of the web app is were predictions are stored in a database. it can be assed using sql
+![salary prediction5](https://user-images.githubusercontent.com/40510766/149773393-2a9b909b-5b2b-40bd-ab16-82ca728b407f.JPG)
+ - Acessing the information in the database(data.db) and table (predictiontable)
+  - in the database created a the table created was named predictiontable.All codes showing this are in app.py
+   ![salary db](https://user-images.githubusercontent.com/40510766/149777677-16fa2ade-0802-48dc-8a2a-fc1f3a34ced1.JPG)
+   
+## CONCLUSION
+- RandomForest had the best accuracy and roc-score but in terms of correctly predicting our minrity label (>50$ ) or 1 as its represented after encoding.
+- Bagging classifier was the best model among all models trained. it was able to predict our minority label better than other classifiers. This was evalauted using the confusion matrix. Bagging classifier(Bc) had the least False negative(FN)  value which made it better than other classifier in predicting the minority class.
+- Although the bagging calssofier predicts quite precisely. It can be a slwo in its predictions compared to other classifiers
 
 
 
