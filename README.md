@@ -35,7 +35,7 @@ This repository contains supervised classification models built with python. Thi
 - Whats the distribution of our target column of adults that earn <=$50 and those that earn >$50
 ![salary value counts](https://user-images.githubusercontent.com/40510766/149764566-19b8182f-2047-4649-82b3-35c40d1729da.JPG)
 
-The target column Salary had more adults that earn less than <$50,000 compared to adults that earn more tahn $50,000. The adults eraning less than $50,000 had 68% more data than the latter.
+The target column Salary had more adults that earn less than <$50,000 compared to adults that earn more tahn $50,000. The adults earning less than $50,000 had 68% more data than the latter.
 This knowledge will enable us evaluate our machine learning model with the right metric. Since this is an imbalanced datasset,using accuracy for the evaluation will not give the  actual performace of our ML model. metrics like F1 score,precison,recall and roc-auc-score will be used to evaluate our models.
 
 - How is the 'workclass' distributed/represented in our dataset?
@@ -68,8 +68,8 @@ We have more data on adults that work in the private sectore in our dataset.
 - **EDA (Exploratory data analysis that can be performed on the dataset on the webapp)**
 - On the web app the dataset can be previewed
 - The number of rows and columns can be gotten
-- its correlation plot can be viewd
-- And its summary statistics(description of data) can be viewed on the web app
+- its correlation plot can be viewed inside the webapp
+- Also its summary statistics(description of data) can be viewed on the web app
 ![streamliteda](https://user-images.githubusercontent.com/40510766/149770465-e99dd905-ffc5-4bb2-b814-86d59171ad53.JPG)
 This shows the heatmap/correlation plot of the features of the dataset
 ![streamliteda2](https://user-images.githubusercontent.com/40510766/149771108-9e01ded6-5e2b-46e0-a2de-890b88516e26.JPG)
@@ -88,16 +88,21 @@ This shows the heatmap/correlation plot of the features of the dataset
 ![salary prediction4](https://user-images.githubusercontent.com/40510766/149773385-64622697-5af3-4845-a1ed-4b423585e00c.JPG)
  
 - **METRICS**
- - This part of the web app is were predictions are stored in a database. it can be assed using sql
+ - This part of the web app is where predictions are stored in a database(data.db). it can be accessed using sqlite
 ![salary prediction5](https://user-images.githubusercontent.com/40510766/149773393-2a9b909b-5b2b-40bd-ab16-82ca728b407f.JPG)
  - Acessing the information in the database(data.db) and table (predictiontable)
   - in the database created a the table created was named predictiontable.All codes showing this are in app.py
    ![salary db](https://user-images.githubusercontent.com/40510766/149777677-16fa2ade-0802-48dc-8a2a-fc1f3a34ced1.JPG)
    
 ## CONCLUSION
-- RandomForest had the best accuracy and roc-score but in terms of correctly predicting our minrity label (>50$ ) or 1 as its represented after encoding.
+- RandomForest had the best accuracy and roc-score but in terms of correctly predicting our minority label (>50$ ) or 1 as its represented after encoding it performed poorly.
 - Bagging classifier was the best model among all models trained. it was able to predict our minority label better than other classifiers. This was evalauted using the confusion matrix. Bagging classifier(Bc) had the least False negative(FN)  value which made it better than other classifier in predicting the minority class.
-- Although the bagging calssofier predicts quite precisely. It can be a slwo in its predictions compared to other classifiers
+- Although the bagging calssofier predicts quite precisely. Its more slower than other classifiers in making predictions.
+
+# WAYS PROJECT COULD BE IMPROVED
+- Adding a time column to the predictiontable that shows when each user makes a prediction
+- Stripping off all white spaces from the data.
+- Collecting data of correct predictions from users incase an incorrect prediction is made. This can help us better evalaute our models performance on unseen data.
 
 
 
