@@ -32,5 +32,46 @@ and contains ****15 columns**** and ****32561 rows****
 # Exploratory Data Analysis
 - Whats the distribution of our target column of adults that earn <=$50 and those that earn >$50
 ![salary value counts](https://user-images.githubusercontent.com/40510766/149764566-19b8182f-2047-4649-82b3-35c40d1729da.JPG)
-"""The target column Salary had more adults that earn less than <$50,000 compared to adults that earn more tahn $50,000. The adults eraning less than $50,000 were """
+
+The target column Salary had more adults that earn less than <$50,000 compared to adults that earn more tahn $50,000. The adults eraning less than $50,000 had 68% more data than the latter.
+This knowledge will enable us evaluate our machine learning model with the right metric. Since this is an imbalanced datasset,using accuracy for the evaluation will not give the  actual performace of our ML model. metrics like F1 score,precison,recall and roc-auc-score will be used to evaluate our models.
+
+- How is the 'workclass' distributed/represented in our dataset?
+![salary workclass distribution](https://user-images.githubusercontent.com/40510766/149765722-8768ed9a-b543-4af7-acfd-60e6b68431bd.JPG)
+
+We have more data on adults that work in the private sectore in our dataset.
+
+# MODELS USED
+- Logistic regression
+- Decision tree classifier
+- Bagging Classifier
+- Random forest
+
+# MODEL Evaluation Techniques USED
+- confusion matrix
+- roc-auc-score
+- accuracy
+- cross validation
+- classification report
+
+# Model Interpretation Technique Used
+- ELI5
+- Information gain(Used On random Forest)
+
+# MODEL DEPLOYMENT METHOD USED
+- Streamlit
+
+# WEB APP Description/components
+- The web app performs the following functions
+- *** Exploratory data analysis that can be performed on the dataset on the webapp ***
+---- On the web app the dataset can be previewed
+---- The number of rows and columns can be gotten
+---- its correlation plot can be viewd
+---- And its summary statistics(description of data) can be viewed on the web app
+
+
+
+
+
+
 
