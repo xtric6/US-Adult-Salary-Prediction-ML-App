@@ -43,27 +43,27 @@ This knowledge will enable us evaluate our machine learning model with the right
 
 We have more data on adults that work in the private sectore in our dataset.
 
-# MODELS USED
+## MODELS USED
 - Logistic regression
 - Decision tree classifier
 - Bagging Classifier
 - Random forest
 
-# MODEL Evaluation Techniques USED
+## MODEL Evaluation Techniques USED
 - confusion matrix
 - roc-auc-score
 - accuracy
 - cross validation
 - classification report
 
-# Model Interpretation Technique Used
+## Model Interpretation Technique Used
 - ELI5
 - Information gain(Used On random Forest)
 
-# MODEL DEPLOYMENT METHOD USED
+## MODEL DEPLOYMENT METHOD USED
 - Streamlit
 
-# WEB APP Description/components
+## WEB APP Description/components
 - The web app performs the following functions
 - **EDA (Exploratory data analysis that can be performed on the dataset on the webapp)**
 - On the web app the dataset can be previewed
@@ -99,7 +99,7 @@ This shows the heatmap/correlation plot of the features of the dataset
 - Bagging classifier was the best model among all models trained. it was able to predict our minority label better than other classifiers. This was evalauted using the confusion matrix. Bagging classifier(Bc) had the least False negative(FN)  value which made it better than other classifier in predicting the minority class.
 - Although the bagging calssofier predicts quite precisely. Its more slower than other classifiers in making predictions.
 
-# WAYS PROJECT COULD BE IMPROVED
+## WAYS PROJECT COULD BE IMPROVED
 - Adding a time column to the predictiontable that shows when each user makes a prediction
 - Stripping off all white spaces from the data.
 - Collecting data of correct predictions from users incase an incorrect prediction is made. This can help us better evalaute our models performance on unseen data.
