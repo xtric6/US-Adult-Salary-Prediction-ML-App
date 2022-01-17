@@ -32,5 +32,5 @@ and contains ****15 columns**** and ****32561 rows****
 # Exploratory Data Analysis
 - Whats the distribution of our target column of adults that earn <=$50 and those that earn >$50
 ![salary value counts](https://user-images.githubusercontent.com/40510766/149764566-19b8182f-2047-4649-82b3-35c40d1729da.JPG)
-"""The target column Salary had more adults that earn less than <$50,000 compared to adults that earn more tahn $50,000. The adults eraning less than $50,000 were 
+"""The target column Salary had more adults that earn less than <$50,000 compared to adults that earn more tahn $50,000. The adults eraning less than $50,000 were """
 
